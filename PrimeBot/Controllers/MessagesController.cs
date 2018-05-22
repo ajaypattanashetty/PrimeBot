@@ -18,7 +18,7 @@ namespace PrimeBot
         {
             if (activity.Type == ActivityTypes.Message)
             {
-                await Conversation.SendAsync(activity, () => new Dialogs.PrimeLUISDailog());
+                await Conversation.SendAsync(activity, () => new Dialogs.RootDialog());// PrimeLUISDailog());
             }
             else
             {
